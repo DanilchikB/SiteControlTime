@@ -1,0 +1,608 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html{
+	height: 100%;}
+
+
+body{
+	wigth:100%;
+	height:100%;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	color:#005D85;
+}
+
+#allcontent
+{
+	
+	height: 100%;
+	width:100%;
+	background-size:100%;
+	float:left;
+	display: flex;
+	flex-direction: column;
+}
+#antifooter
+{
+	flex: 1 0 auto;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+	color:#005D85;
+}
+
+
+
+/* Стили для шапки */
+
+header
+{
+	width:98%;
+	float:left;
+	padding:1%;
+	background:#005D85;
+	border-bottom: 2px solid silver;
+	border-color:#003D57;
+	margin-bottom: 20px;
+	overflow:hidden;
+	position:relative;
+	z-index:2;
+	}
+
+@media(min-width:800px){
+header #mainMenu{
+	display:none;
+}	
+header #logo{
+	width:65%;
+	float:left;
+	color: #DCE3E6;
+	font-size: 2em;
+	font-family: Times New Roman, sans-serif;
+}
+header #logo a {
+	color: #DCE3E6;
+	font-family: Times New Roman, sans-serif;
+}}
+@media(max-width:799px){
+	header #logo{
+		display:none;
+	}
+	header #mainMenu
+	{
+	padding:1.5%;
+	font-size:150%;
+	top:0;
+	bottom:0;
+	float:left;
+	color: #DCE3E6;
+	font-size: 2em;
+	font-family: Times New Roman, sans-serif;
+	position:absolute;
+	background:;
+	border:2px solid silver;
+	border-radius:5px;
+	border-color:#DCE3E6;
+	z-index:3;
+	}
+	header #mainMenu div
+	{
+		padding:0%;
+		width:60px;
+		text-align:center;
+	    font-size:150%;
+		
+	}	
+	header #mainMenu:hover
+	{
+		background:#DCE3E6;
+		color:#005D85;
+		cursor: pointer;
+	}
+}
+@media(min-width:800px){
+header #regAuth {
+	width:30%;
+	float:left;
+	text-align:right;
+	font-size: 1.2em;
+	padding:5px;
+}}
+header #regAuth a{
+	color: #DCE3E6;
+	padding:5px;
+}
+@media(max-width:799px){
+	header #regAuth {
+	width:95%;
+	float:left;
+	text-align:right;
+	font-size: 1.2em;
+	padding:5px;
+}}
+
+/*Обертка*/
+#wrapper {
+	width: 82%;
+	margin-left:8%;
+	margin-right:8%;
+	float: left;
+	background:#E5EAEC;
+	padding:1%;
+	min-height:80%;
+	
+}
+@media (max-width: 799px){
+	#wrapper {
+	margin-left:0%;
+	margin-right:0%;
+	width:100%;
+	}
+}
+@media (min-width: 800px){
+#wrapper #leftcol
+{
+	width:73%;
+	margin-right:5%;
+	float:left;
+	background:#FCFBFB;
+	padding: 1%;
+	min-height:70vh;
+	position:relative;
+}}
+@media (max-width: 799px){
+#wrapper #leftcol
+{
+	width:98%;
+	float:left;
+	background:#FCFBFB;
+	padding: 1%;
+	min-height:70vh;
+	position:relative;
+}}
+#problem
+{
+	margin-top:8px;
+	text-align:center;
+	color:red;
+}
+@media (min-width: 800px){
+#wrapper #rightcol
+{
+	float:left;
+	width: 20%;
+	background:#FCFBFB;
+	border-radius: 5px;
+	border-color:#005D85;
+	border:2px solid silver;
+	box-sizing:border-box;
+
+}}
+@media (max-width: 799px){
+#wrapper #rightcol
+{
+	position:absolute;
+	top:0;
+	left:-170px;
+	width:20%;
+	background:#FCFBFB;
+	border-radius: 0 0 5px 0;
+	border:2px solid silver;
+	border-top:none;
+	border-left:none;
+	border-color:#005D85;
+	box-sizing:border-box;
+	width:170px;
+	height:150px;
+	padding-top:40px;
+	z-index:1;
+	transition: left 1s;
+}}
+#wrapper #rightcol #blockmenu
+{
+	width:80%;
+	float: left;
+	padding-top:5%;
+	padding-left:10%;
+	line-height:2;
+	padding-bottom:5%;
+	margin-left:10px;
+	color:#005D85;
+}
+/*футер*/
+footer{
+	width: 98%;
+	float: left;
+	padding:1%;
+	background: #005D85;
+	border-top: 2px solid silver;
+	margin-top: 20px;
+	flex: 0 0 auto;
+	border-color:#003D57;
+}
+footer #menuHead{
+	width:35%;
+	float: left;
+}
+
+footer #menuHead div{
+	float: left;
+	padding:5px;
+	color:#DCE3E6;
+	font-size: 1.2em;
+}
+
+footer #menuHead div:hover,header #regAuth a:hover{
+	color:#005D85;
+	background: #DCE3E6;
+	border-radius: 5px;
+}
+
+footer #rights{
+	float: right;
+	wigth: 100%;
+	text-align: right;
+	font-size: 1.1em;
+	color:#DCE3E6;
+}
+/*формы регистрации и авторизации*/
+#regAut form
+{
+	width:300px;
+	padding:0 20px;
+	padding-top:1%;
+	min-height:100px;
+	background:#FCFBFB;
+	border-radius: 5px;
+	border-color:#005D85;
+	border:2px solid silver;
+	box-sizing:border-box;
+	margin:0 auto;
+	margin-top:5%;
+	margin-bottom:1%;
+}
+#regAut form .title
+{
+	width:100%;
+	font-size:2em;
+	margin:0 auto;
+	margin-top:10%;
+	margin-bottom:10%;
+	height:30px;
+	text-align:center;
+	color:	#005D85;
+}
+#regAut form input
+{
+	width:100%;
+	margin:0 auto;
+	box-sizing:border-box;
+	height:30px;
+	font-size:1.1em;
+	margin-bottom:5%;
+	border:1px solid silver;
+}
+#regAut form .sending
+{
+	margin-bottom:12%;
+	border-radius:5px;
+	border:2px solid silver;
+	border-color:#005D85;
+	color:#DCE3E6;
+	background:#005D85;
+	box-sizing:border-box;
+}
+.reg
+{
+	padding:1%;
+	width:300px;
+	margin:0 auto;
+	text-align: center;
+	line-height:1.5;
+	background:#FCFBFB;
+	border-radius: 5px;
+	border-color:#005D85;
+	border:2px solid silver;
+	box-sizing:border-box;
+}
+.reg a 
+{
+	border:2px solid silver;
+	border-color:#005D85;
+	color:#DCE3E6;
+	background:#005D85;
+	border-radius:5px;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 1.1em;
+	padding:0 6px;
+}
+.reg a:hover, form .sending:hover
+{
+	color:#005D85;
+	background: #DCE3E6;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*Помидоро*/
+#basistimer
+{
+	min-width:200px;
+	min-height:200px;
+	text-align: center; 
+	margin:0 auto;
+}
+#basistimer input
+{
+	width:90px;
+	box-sizing:border-box;
+	height:30px;
+	font-size:1.1em;
+	margin-bottom:5%;
+	border-radius:5px;
+	border:2px solid silver;
+	color:#DCE3E6;
+	background:#005D85;
+	border-color:#005D85;
+	margin:3% 1%;
+}
+#basistimer #test
+{
+	font-size:300%;
+	border-radius:50%;
+	border:2px solid silver;
+	border-color:rgb(0,93,133);
+	margin:0 auto;
+	width:200px;
+	height:200px;
+	margin-top:5%;
+	color:black;
+	text-align:center;
+	position:relative;
+	background:rgb(0,93,133);
+	overflow:hidden;
+}
+@media(max-width:799px){
+	#basistimer #test
+	{
+		margin-top:50px;
+	}
+}
+#basistimer #test p
+{
+	top:0;
+	margin:0 auto;
+	position: absolute;
+	width:200px;
+	bottom:0px;
+	z-index:1;
+	background:#FCFBFB;
+}
+#basistimer #test p #text
+{
+    text-align: center;
+	line-height:200px;
+	color:#FCFBFB; 
+    mix-blend-mode: difference;
+}
+
+#setting
+{
+	position:absolute;
+	top:2%;
+	right:2%;
+	z-index:2;
+	background:#FCFBFB;
+	overflow:hidden;
+	text-align:center;
+	border:2px solid silver;
+	border-color:transparent;
+	transition:height 0.4s, width 0.2s,border 0.3s;
+}
+#settingab
+{
+	height:100%;
+	position:relative;
+	padding-top:40px;
+}
+#setting #menu{
+	position:absolute;
+	width:100px;
+	box-sizing:border-box;
+	height:30px;
+	font-size:1.1em;
+	margin-bottom:5%;
+	border-radius:5px;
+	border:2px solid silver;
+	color:#DCE3E6;
+	background:#005D85;
+	border-color:#005D85;
+	margin-bottom:10px;
+	text-align:right;
+	right:0;
+	top:0;
+	text-align:center;
+	
+}
+
+#setting #menu:hover
+{
+	color:#005D85;
+	background: #DCE3E6;
+	cursor: pointer;
+}
+
+#setting input
+{
+	width:50px;
+	margin:0 auto;
+	box-sizing:border-box;
+	height:30px;
+	font-size:1.1em;
+	margin-bottom:5%;
+	border:2px solid silver;
+	border-color:#005D85;
+	text-align:center;
+}
+#setting .plus,#setting .minus
+{
+	width: 30px;
+	height: 30px;
+	border-radius:50%;
+	border:2px solid silver;
+	text-align:center;
+	color:#DCE3E6;
+	background:#005D85;
+	border-color:#005D85;
+}
+#setting .val
+{
+	background:white;
+	color:#005D85;
+	border-radius:5px;
+}
+#setting .plus:hover,#setting .minus:hover,#basistimer input:hover
+{
+	color:#005D85;
+	background: #DCE3E6;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#countpomidor
+{
+	font-size:1.2em;
+	text-align:center;
+}
+
+/*Блокнот*/
+
+#notepad
+{
+	margin:0 auto;
+	text-align:center;
+	padding:2%;
+}
+#notepad h1
+{
+	margin:4%;
+}
+
+#notepad #createPost
+{
+	font-size:1.3em;
+	border: 2px solid silver;
+	border-color:green;
+	border-radius:5px;
+	color:#DCE3E6;
+	background:green;
+	display:block;
+	width:150px;
+	padding:3px;
+	margin:0 auto;
+}
+#notepad #createPost:hover
+{
+	color:green;
+	background:#DCE3E6;
+}
+#notepad #record
+{
+	border:none;
+	font-size:2em;
+	margin-bottom:30px;
+}
+
+#notepad #record #alignment
+{
+	text-align:right;
+	display:block;
+	margin-left: auto;
+}
+#notepad #record #alignment span{
+	width:10%;
+	font-size:80%;
+}
+
+#notepad #record .text
+{
+	width:90%;
+	height:30px;
+	font-size:60%;
+	border-radius: 5px;
+	border:2px solid silver;
+	border-color:#005D85;
+}
+#notepad #record .transform1,#notepad #record .delete
+{
+	height:30px;
+	font-size:60%;
+	border-color:#005D85;
+	border-radius:5px;
+	color:#DCE3E6;
+	float:right;
+}
+#notepad #record .transform1
+{
+	background:#005D85;
+}
+#notepad #record .transform1:hover
+{
+	background:#DCE3E6;
+	color:#005D85;
+}
+#notepad #record .delete
+{
+	background:#FF1825;
+	border-color:#FF1825;
+}
+#notepad #record .delete:hover
+{
+	background:#DCE3E6;
+	color:#FF1825;
+}
+/*создать пост*/
+
+#createPost
+{
+	text-align:center;
+	padding:2%;
+}
+#createPost label
+{
+	font-size:2em;
+}
+
+#createPost textarea
+{
+	width:99.8%;
+	resize:none;
+	height:30vh;
+	margin-top:3%;
+}
+#createPost input
+{
+	width:100px;
+	float:right;
+	font-size:1.2em;
+	margin-left:10px;
+	border:2px solid silver;
+	border-color:#005D85;
+	background:#005D85;
+	color:#FCFBFB;
+}
+#createPost input:hover
+{
+	background:#FCFBFB;
+	color:#005D85;
+}
